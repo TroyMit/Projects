@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Product of Odd Integers</title>
+    <meta charset="utf-8">
+    <script>
+        var prod = 1;
+        var MAXVALUE = 15;
+		
+        document.write("<p>");
+
+        for (var i=1; i<=MAXVALUE; i+=2){
+            prod = prod * i;
+
+            if (i != 15){
+                document.write(i + " * ");
+            }
+            else {
+                document.write(i + " = ");
+            }
+        }
+
+        document.write(prod + "</p>");
+    </script>
+</head>
+</html>

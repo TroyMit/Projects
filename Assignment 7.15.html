@@ -1,0 +1,47 @@
+<DOCTYPE html> 
+
+<html> 
+	<head>
+		<meta charset = "utf-8">
+		
+		<script type = "text/javascript">
+		
+		var counter = 1;
+		var number = 0;
+	
+	while (counter <= 10)
+	{
+		if(counter == 1)
+		{
+		number = window.prompt("Enter 1st number");
+		largest = parseInt(number);
+		}
+		if(counter == 2)
+		{
+		number = window.prompt("Enter 2nd number");
+		}
+		if(counter == 3)
+		{
+		number = window.prompt("Enter 3rd number");
+		}
+		if(counter > 3)
+		{
+		number = window.prompt("Enter "+counter+"th number");
+		}
+		
+		if(parseInt(number) > largest)
+		{
+		largest = parseInt(number);
+		}
+		
+		++counter
+			}
+		
+		document.write("<h3>" +largest+ " is the largest number.<h3>");
+		
+			</script>
+	</head> 
+	
+	<body>
+	</body>
+</html>

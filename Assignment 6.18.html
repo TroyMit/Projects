@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!-- Fig. 6.14: welcome5.html -->
+<!-- Using equality and relational operators. -->
+<html>
+   <head> 
+    <meta charset = "utf-8">
+    <title>Compare Numbers</title>
+    <h1 style = "text-align:center">Compare the Integers!</h1>
+    <script>
+
+     var firstNumber; // first string entered by the user
+     var secondNumber; // second string entered by the user
+     var thirdNumber; // third string entered by the user
+     var sum; // add the integers
+     var average; // add the integers, divide by 3
+     var product; // multiply the integers
+
+     // enter first number from user as a string
+     firstNumber = window.prompt("Enter first integer");
+
+     // enter second number from user as a string
+     secondNumber = window.prompt("Enter second integer");
+
+     // enter third number from user as a string
+     thirdNumber = window.prompt("Enter third integer");
+
+     // convert numbers from strings to integers
+     firstNumber = parseInt(firstNumber);
+     secondNumber = parseInt(secondNumber);
+     thirdNumber = parseInt(thirdNumber);
+
+     //determine result
+     if ((firstNumber > secondNumber) & (firstNumber > thirdNumber))
+        window.alert(firstNumber + " is largest");
+
+     else if ((secondNumber > firstNumber) & (secondNumber > thirdNumber))
+        window.alert(secondNumber + " is largest"); 
+		
+	 else {
+        window.alert(thirdNumber + " is largest");
+	}
+	
+	 if ((firstNumber < secondNumber) & ( firstNumber < thirdNumber))
+        window.alert(firstNumber + " is smallest");
+	
+	 else if ((secondNumber < firstNumber) & (secondNumber < thirdNumber))
+        window.alert(secondNumber + " is smallest"); 
+		
+	 else{
+	 window.alert(thirdNumber + " is smallest");
+	 }
+	 
+
+		
+    //determine sum, average, and product
+    
+     sum = firstNumber + secondNumber + thirdNumber;
+     average = (firstNumber + secondNumber + thirdNumber) / 3 ;    
+     product = (firstNumber * secondNumber * thirdNumber);
+        alert("The sum is " + sum + ", The average is " + average+ ", The product is " + product);
+   
+
+</script>
+</head>
+<body>
+</body>
+</html>

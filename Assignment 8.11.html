@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mail Order </title>
+<script type="text/javascript">
+<!--
+var q;
+var p;
+var qty;
+var price;
+var pno=0;
+var ans=0;
+var counter=0;
+total=0;
+document.write("Enter product number for an item, -1 to quit: <br /> 1. Product-1 <br /> 2. Product-2 <br /> 3. product-3 <br /> 4. Product-4 <br /> 5. Product-5");
+pno=window.prompt("Enter product number, -1 to Quit");
+p=parseInt(pno);
+while(pno!=-1)
+{
+switch(p)
+{
+case 1: price= 2.98;
+q= window.prompt("Enter number of quantities sold for product-1:");
+qty=parseInt(q);
+ans=price*qty;
+break;
+case 2: price= 4.50;
+q= window.prompt("Enter number of quantities sold for product-2:");
+qty=parseInt(q);
+ans=price*qty;
+break;
+case 3: price= 9.98;
+q= window.prompt("Enter number of quantities sold for product-3:");
+qty=parseInt(q);
+ans=price*qty;
+break;
+case 4: price= 4.49;
+q= window.prompt("Enter number of quantities sold for product-4:");
+qty=parseInt(q);
+ans=price*qty;
+break;
+case 5: price= 6.87;
+q= window.prompt("Enter number of quantities sold for product-5:");
+qty=parseInt(q);
+ans=price*qty;
+break;
+default: window.alert("No proper input, Please try Again");
+break;
+}
+counter=counter+1;
+total=total + parseInt(ans);
+pno=window.prompt("Enter product number, -1 to Quit");
+p=parseInt(pno);
+}
+if(counter!=0)
+{
+document.writeln( "<h1> Total Sales for Last week is: $" + total + "</h1>" );
+}
+else
+{
+window.alert("No product number is entered, Thank you");
+}
+// -->
+</script>
+</head>
+<body>
+<h1>Mail Order</h1>
+<hr />
+
+<p>Press F5 or Refresh to load script again.</p>
+
+</body>
+</html>

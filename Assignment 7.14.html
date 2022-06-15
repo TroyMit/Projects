@@ -1,0 +1,63 @@
+<DOCTYPE html> 
+<html>
+<head>
+<title>Pay Day </title>
+<script type="text/javascript">
+<!--
+var e1;
+var r1;
+var e2;
+var r2;
+var e3;
+var r3;
+e1 = window.prompt("Enter Number of Hours Employee 1 worked last week:");
+r1 = window.prompt("Enter hourly wage rate for Employee 1:");
+e2 = window.prompt("Enter Number of Hours Employee 2 worked last week:");
+r2 = window.prompt("Enter hourly wage rate for Employee 2:");
+e3 = window.prompt("Enter Number of Hours Employee 3 worked last week:");
+r3 = window.prompt("Enter hourly wage rate for Employee 3:");
+var cal1;
+if(parseInt(e1)>40)
+{
+var extrahours = parseInt(parseInt(e1)-40);
+var extrarate= parseInt(r1) + (parseInt(r1) / 2 );
+cal1= ((40 * parseInt(r1))+ (extrahours * parseInt(extrarate)));
+}
+else
+{
+cal1=parseInt(e1) * parseInt(r1);
+}
+document.writeln( "<h1> Employee1 Gross Wage is: " + cal1 + "</h1>" );
+var cal2;
+if(parseInt(e2)>40)
+{
+var extrahours1 = parseInt(parseInt(e2)-40);
+var extrarate1= parseInt(r2) + (parseInt(r2) / 2 );
+cal2= ((40 * parseInt(r2))+ (extrahours1 * parseInt(extrarate1)));
+}
+else
+{
+cal2=parseInt(e2) * parseInt(r2);
+}
+document.writeln( "<h1> Employee2 Gross Wage is: " + cal2 + "</h1>" );
+var cal3;
+if(parseInt(e3)>40)
+{
+var extrahours2 = parseInt(parseInt(e3)-40);
+var extrarate2= parseInt(r3) + (parseInt(r3) / 2 );
+cal3= ((40 * parseInt(r3))+ (extrahours2 * parseInt(extrarate2)));
+}
+else
+{
+cal3=parseInt(e3) * parseInt(r3);
+}
+document.writeln( "<h1> Employee3 Gross Wage is: " + cal3+ "</h1>" );
+// -->
+</script>
+</head>
+<body>
+<h1><center>Pay Day</center>
+<hr />
+<p> Click Refresh(F5) or reload to run this script again</p>
+</body>
+</html>
